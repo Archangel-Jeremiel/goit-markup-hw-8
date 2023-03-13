@@ -1,0 +1,54 @@
+.area-​​work {
+  @extend %section;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding: 0 15px 94px;
+  }
+}
+
+.area-​​work-list {
+  @extend %list;
+  display: flex;
+  padding-left: 0px;
+}
+
+.area-​​work__item {
+  &:not(:last-child) {margin-right: 30px;}
+}
+
+.area-​​work-thumb {
+  position: relative;
+}
+
+.area-​​work-thumb__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.area-​​work-thumb__box {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  background-color: #2f303a;
+  opacity: 0.8;
+}
+
+.area-​​work-thumb__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-text-color);
+}

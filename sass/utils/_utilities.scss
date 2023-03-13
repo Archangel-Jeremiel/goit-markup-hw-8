@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: var(--fonts);
+    letter-spacing: 0.03em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  button {
+    border: 0px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+
+  .main {
+    background-color: var(--primary-background-color);
+  }
+
+.area-​​work__title,
+.container-teem__title,
+.container-clients__title {
+  margin-bottom: 30px;
+
+  color: var(--primary-title-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}

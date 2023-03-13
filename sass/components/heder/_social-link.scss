@@ -1,0 +1,38 @@
+.social-heder {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    padding-left: 0;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.social-heder__item {
+    display: flex;
+}
+
+.social-heder__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    color: #2196F3;
+}
+
+.social-heder__txt {
+    display: block;
+    margin: 0 10px;
+
+    font-size: 22px;
+}
+
+.social-heder__icon {
+    display: block;
+    margin: 0 10px;
+
+}

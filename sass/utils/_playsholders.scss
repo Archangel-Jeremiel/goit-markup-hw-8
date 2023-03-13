@@ -1,0 +1,21 @@
+%section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 15px;
+  }
+}
+
+/* Добавим общий стиль на списки, кнопки*/
+%list {
+  list-style: none;
+}
+
+/* @media screen and (min-width: 480px) {
+  %container {
+    width: 480;
+  }
+} */

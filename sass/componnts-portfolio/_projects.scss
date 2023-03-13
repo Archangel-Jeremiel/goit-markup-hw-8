@@ -1,0 +1,105 @@
+.container-filter {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+}
+.list-projects {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.list-projects__item {
+  margin-bottom: 30px;
+}
+
+/* .list-projects__item {
+  &:nth-last-child(-n + 3) {margin-bottom: 0px;}
+}
+
+.list-projects__item {
+  &:nth-child(3n + 3) {margin-right: 0px;}
+} */
+
+.list-projects__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-projects__link {
+  &:hover, &:focus {box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06);}
+  
+}
+
+.product-action {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-action__foto {
+  display: flex;
+  width: 100%;
+}
+
+.product-action__description {
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+.product-action__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 322px;
+  height: 168px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  color: var(--white-text-color);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.card-description__title {
+  margin: 0px 0px 4px;
+  color: var(--primary-title-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-description__text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.product-action__description {
+  .list-projects__link:hover &::before, .list-projects__link:focus &::before {transform: translateY(0);}
+}
+
+.product-action__text {
+  .list-projects__link:hover &, .list-projects__link:focus & {
+    opacity: 1;
+  }
+}
